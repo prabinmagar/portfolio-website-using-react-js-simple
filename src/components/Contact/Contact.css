@@ -1,0 +1,27 @@
+.contact-form{
+    max-width: 460px;
+}
+.contact-form .form-control{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--light-grey-color);
+    border-radius: 35px;
+    min-height: 66px;
+    font-size: 22px;
+    padding: 0 3rem;
+    line-height: 66px;
+    margin-bottom: 2.6rem;
+    outline: none;
+    font-family: inherit;
+    font-weight: 200;
+}
+.contact-form textarea.form-control{
+    resize: none;
+}
+.contact-form .submit-btn{
+    width: 100%;
+    height: 66px;
+    border-radius: 35px;
+    border: 2px solid var(--brown-color);
+    transition: var(--transition);
+}

@@ -1,38 +1,204 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --brown-color: #b09a68;
+  --dark-color: #303034;
+  --grey-color: #dfdfe0;
+  --light-grey-color: #eaeaea;
+  --white-color: #fff;
+  --black-color: #000;
+  --transition: all 300ms ease-in-out;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+button{
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: 0;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+img{
+  width: 100%;
+  display: block;
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.section-p{
+  padding: 10rem 00;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-c{
+  justify-content: center;
+}
+.flex-sb{
+  justify-content: space-between;
+}
+.grid{
+  display: grid;
+  align-items: center;
+}
+.text{
+  line-height: 1.7;
+  font-weight: 300;
+  opacity: 0.9;
+  font-size: 1.6rem;
+}
+
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-left{
+  text-align: left;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-white{
+  color: var(--white-color);
+}
+.text-black{
+  color: var(--black-color);
+}
+.text-brown{
+  color: var(--brown-color)
+}
+.text-grey{
+  color: var(--grey-color);
+}
+.text-dark{
+  color: var(--dark-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.fw-2{font-weight: 200;}
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fw-8{font-weight: 800;}
+.fw-9{font-weight: 900;}
+
+/* backgrounds */
+.bg-transparent{
+  background-color: transparent;
+}
+.bg-white{
+  background-color: var(--white-color);
+}
+.bg-black{
+  background-color: var(--black-color);
+}
+.bg-grey{
+  background-color: var(--grey-color);
+}
+.bg-light-grey{
+  background-color: var(--light-grey-color);
+}
+.bg-brown{
+  background-color: var(--brown-color);
+}
+.bg-dark{
+  background-color: var(--dark-color);
+}
+
+/* letter spacing */
+.ls-1{letter-spacing: 1px;}
+.ls-2{letter-spacing: 2px;}
+
+.mx-auto{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* font size */
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size: 20px;}
+.fs-22{font-size: 22px;}
+.fs-24{font-size: 24px;}
+
+/* opacity */
+.op-09{opacity: 0.9;}
+.op-08{opacity: 0.8;}
+.op-07{opacity: 0.7;}
+.op-06{opacity: 0.6;}
+.op-05{opacity: 0.5;}
+
+/* button */
+.btn-item{
+  color: var(--white-color);
+  border-radius: 30px;
+  border: 1px solid var(--white-color);
+  transition: var(--transition);
+}
+.btn-groups .btn-item:first-child{
+  margin-right: 2.6rem;
+}
+.btn-groups .btn-item:hover{
+  background-color: transparent;
+  border-color: var(--white-color)!important;
+}
+
+/* animation and transition stopper */
+.resize-animation-stopper *{
+  animation: none!important;
+  transition: none!important;
+}
+
+/* section title */
+.section-title{
+  text-align: center;
+  margin-bottom: 3.8rem;
+}
+.section-title h3{
+  font-size: 2.6rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px){
+  .section-title h3{
+    font-size: 3.6rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App{
+  overflow-x: hidden;
 }

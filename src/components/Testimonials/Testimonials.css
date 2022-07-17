@@ -1,0 +1,46 @@
+.testimonials{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(42, 42, 46, 0.7), 40%, rgba(42, 42, 46, 0.85)), url("../../assets/images/testimonials_background.jpeg") center/cover no-repeat;
+}
+.testimonials-item-text{
+    margin: 20px 0;
+}
+.testimonials-item-text span{
+    display: block;
+    letter-spacing: 0.5px;
+}
+.testimonials-item-text small{
+    font-weight: 300;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+.testimonials-item{
+    padding-bottom: 2rem;
+}
+.testimonials-item .text{
+    max-width: 500px;
+}
+.slick-dots li button::before{
+    font-size: 15px!important;
+    color: #fff!important;
+}
+
+.logos-list{
+    row-gap: 30px;
+    margin-top: 80px;
+}
+.logos-item img{
+    width: 160px;
+}
+
+@media screen and (min-width: 576px){
+    .logos-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logos-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

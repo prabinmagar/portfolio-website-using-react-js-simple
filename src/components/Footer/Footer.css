@@ -1,0 +1,15 @@
+.footer .section-title{
+    margin-bottom: 0;
+}
+.footer.section-p{
+    padding: 4.5rem 0;
+}
+.footer-social-links{
+    margin-top: 2rem;
+}
+.footer-social-links li{
+    margin: 0 1rem;
+}
+.footer .reserved-text{
+    margin-top: 2rem;
+}

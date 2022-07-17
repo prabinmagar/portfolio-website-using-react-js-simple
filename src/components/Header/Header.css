@@ -1,0 +1,45 @@
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/header_background.png") center/cover no-repeat;
+    justify-content: stretch;
+}
+.header > .container{
+    height: 100%;
+    flex: 1;
+    width: 100%;
+}
+.header-title{
+    font-size: 28px;
+    line-height: 1.4;
+    margin-top: 1.8rem;
+    max-width: 600px;
+}
+.header .btn-groups{
+    margin-top: 4.8rem;
+}
+.header .btn-groups .btn-item{
+    font-size: 1.6rem;
+    padding: 1.4rem 2rem;
+}
+.header .btn-groups .btn-item:first-child{
+    border-color: var(--brown-color);
+}
+.header .btn-groups .btn-item:last-child{
+    border-color: var(--dark-color);
+}
+
+@media screen and (min-width: 768px){
+    .header-title{
+        font-size: 40px;
+    }
+    .header .btn-groups .btn-item{
+        font-size: 2.2rem;
+        padding: 1.4rem 3.4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header-title{
+        font-size: 48px;
+    }
+}

@@ -1,0 +1,33 @@
+.workprocess-list{
+    row-gap: 3rem;
+    padding-top: 4rem;
+}
+.workprocess-item{
+    text-align: left;
+    padding: 2.8rem;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    transition: var(--transition);
+}
+.workprocess-item:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.workprocess-item-title{
+    align-items: baseline;
+}
+.workprocess-item-title span:first-child{
+    font-size: 45px;
+    margin-right: 1.6rem;
+}
+
+@media screen and (min-width: 678px){
+    .workprocess-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .workprocess-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

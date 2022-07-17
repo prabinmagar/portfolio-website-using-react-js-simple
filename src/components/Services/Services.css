@@ -1,0 +1,29 @@
+.services-list{
+    row-gap: 2rem;
+}
+.services-item{
+    padding: 2.4rem;
+}
+.services-item-img{
+    margin-bottom: 0.8rem;
+}
+.services-item-img img{
+    width: 80px;
+}
+.services-item-text .text{
+    max-width: 460px;
+}
+
+@media screen and (min-width: 768px){
+    .services-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .services-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
